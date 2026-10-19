@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Neptune — Microsoft Activity Centers</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="desktop" id="desktop">
+  <header class="toolbar">
+    <button class="tool" data-page="back" title="Back"><span class="arrow">⬅</span><small>Back</small></button>
+    <button class="tool" data-page="forward" title="Forward"><span class="arrow">➡</span><small>Forward</small></button>
+    <button class="tool" data-page="start"><span class="app-icon start-icon"><i></i><b></b><em></em></span><small>myStartPage</small></button>
+    <button class="tool" data-page="expedia"><span class="round-icon">✈</span><small>Expedia</small></button>
+    <button class="tool" data-page="carpoint"><span class="car">🚙</span><small>CarPoint</small></button>
+    <button class="tool" data-page="cnet"><span class="round-icon red">c|net</span><small>c|net</small></button>
+    <button class="tool" data-page="word"><span class="puzzle blue">▧</span><small>Word</small></button>
+    <button class="tool" data-page="excel"><span class="puzzle green">▧</span><small>Excel</small></button>
+    <button class="tool" data-page="outlook"><span class="mail-icon">✉</span><small>Outlook Express</small></button>
+    <div class="tool-spacer"></div><div class="clock">11:55am</div>
+    <button class="tool compact" id="searchBtn"><span class="glass">⌕</span><small>Search</small></button>
+    <button class="tool compact" id="wizardBtn"><span class="wizard">✣</span><small>Wizard</small></button>
+  </header>
+  <div class="subnav" id="subnav"><button data-page="home">Home</button><button data-page="documents">Documents</button><button data-page="activities">Activities</button></div>
+  <main id="view"></main>
+  <div class="toast" id="toast"></div>
+  <div class="modal-backdrop hidden" id="modal"><section class="modal"><header id="modalTitle">Neptune</header><button class="x" id="modalClose">×</button><div id="modalBody"></div></section></div>
+</div><script src="app.js"></script>
+</body></html>
